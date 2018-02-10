@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo_pc.hieuktfirebase.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Đăng Ký Thành Viên"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/edt_taikhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="UserName"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edt_matkhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edt_taikhoan"
+        android:ems="10"
+        android:hint="PassWord"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_dangky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_matkhau"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Đăng Ký" />
+
+    <Button
+        android:id="@+id/btn_dangnhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_dangky"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btn_dangky"
+        android:layout_marginBottom="22dp"
+        android:text="Đăng nhập" />
+
+    <EditText
+        android:id="@+id/edtTaiKhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_dangky"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="UserName"/>
+
+    <EditText
+        android:id="@+id/edtMatKhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTaiKhoan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="PassWord"/>
+</RelativeLayout>
